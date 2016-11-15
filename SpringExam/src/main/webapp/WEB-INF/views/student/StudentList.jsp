@@ -22,29 +22,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-	<form:form commandName="searchVO" name="listForm" id="listForm"
+	<form:form name="listForm" id="listForm"
 		method="post">
-		<input type="hidden" name="number" />
-		<div id="content_pop">
-			<!-- List -->
-			<div id="table">
-				<table width="100%" border="0" cellpadding="0" cellspacing="0">
-					<colgroup>
-						<col />
-						<col />
-					</colgroup>
-					<c:forEach var="result" items="${resultList}" varStatus="status">
-						<tr>
-							<td align="center" class="listtd"><c:out
-									value="${result.number}" /></a>&nbsp;</td>
-							<td align="center" class="listtd"><c:out
-									value="${result.name}" />&nbsp;</td>
-						</tr>
-					</c:forEach>
-				</table>
-			</div>
-			<!-- /List -->
-		</div>
+		<c:forEach var="result" items="${resultList}" varStatus="status">
+			<li>
+				<c:out value="${result.number}" />&nbsp;
+				<c:out value="${result.name}" />
+			</li>
+		</c:forEach>
+		<li><a href="/web/student/addStudentView.do">CREATE</a></li>
 	</form:form>
 </body>
 </html>

@@ -2,7 +2,7 @@ package egovframework.student.web;
 
 import java.util.List;
 
-import javax.annotation.Resource;
+import javax.inject.Inject;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,7 +28,7 @@ import egovframework.student.service.StudentService;
 @SessionAttributes(types = StudentVO.class)
 public class StudentController {
 
-	@Resource(name = "studentService")
+	@Inject
 	private StudentService studentService;
 
 	/**
