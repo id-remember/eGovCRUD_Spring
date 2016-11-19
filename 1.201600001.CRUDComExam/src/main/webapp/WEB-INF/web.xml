@@ -255,7 +255,6 @@
     </servlet-mapping>
 
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
         <welcome-file>egovDevIndex.jsp</welcome-file>
     </welcome-file-list>
     <login-config>
@@ -265,14 +264,5 @@
     <session-config>
         <session-timeout>600</session-timeout>
     </session-config>
-
-    <error-page>
-      <error-code>404</error-code>
-      <location>/code404.jsp</location>
-    </error-page>
-    <error-page>
-      <error-code>500</error-code>
-      <location>/code500.jsp</location>
-    </error-page>
 
 </web-app>

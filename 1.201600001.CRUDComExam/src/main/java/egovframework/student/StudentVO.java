@@ -1,24 +1,8 @@
 package egovframework.student;
 
-/**
- * @Class Name : StudentVO.java
- * @Description : Student VO class
- * @Modification Information
- *
- * @author 1.201600001
- * @since 2016.11.14
- * @version 1.0
- * @see
- *  
- *  Copyright (C)  All right reserved.
- */
-public class StudentVO extends StudentDefaultVO{
-    private static final long serialVersionUID = 1L;
+public class StudentVO {
     
-    /** number */
     private java.lang.String number;
-    
-    /** name */
     private java.lang.String name;
     
     public java.lang.String getNumber() {
